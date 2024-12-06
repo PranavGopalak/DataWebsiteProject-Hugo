@@ -1,0 +1,6 @@
+baseURL = "https://<your-username>.github.io/DataWebsiteProject/"
+languageCode = "en-us"
+title = "Pranav's Data Website Project"
+theme = "ananke"
+paginate = 10
+
