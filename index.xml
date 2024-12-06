@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Data Website Project - Hugo</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/</link><description>Recent content in Home on Data Website Project - Hugo</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2024 12:00:00 +0000</lastBuildDate><atom:link href="https://PranavGopalak.github.io/DataWebsiteProject-Hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Calculator</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/calculator/</link><pubDate>Sun, 01 Dec 2024 12:00:00 +0000</pubDate><guid>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/calculator/</guid><description>&lt;h2 id="simple-calculator">Simple Calculator&lt;/h2>
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted --></description></item><item><title>Random Quote</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/quote/</link><pubDate>Sun, 01 Dec 2024 12:00:00 +0000</pubDate><guid>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/quote/</guid><description>&lt;h2 id="motivational-quote">Motivational Quote&lt;/h2>
-&lt;!-- raw HTML omitted -->
-&lt;p>function generateQuote() {
-const randomIndex = Math.floor(Math.random() * quotes.length);
-const quote = quotes[randomIndex];
-document.getElementById(&amp;lsquo;quote&amp;rsquo;).innerText = &lt;code>&amp;quot;${quote.text}&amp;quot;&lt;/code>;
-document.getElementById(&amp;lsquo;author&amp;rsquo;).innerText = &lt;code>— ${quote.author}&lt;/code>;
-}&lt;/p>
-&lt;p>// Generate a quote when the page loads
-window.onload = generateQuote;
-&lt;!-- raw HTML omitted -->&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Data Website Project - Hugo</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/</link><description>Recent content in Home on Data Website Project - Hugo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://PranavGopalak.github.io/DataWebsiteProject-Hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Calculator</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/calculator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/calculator/</guid><description>Simple Calculator</description></item><item><title>Random Quote</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/quote/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/quote/</guid><description>Motivational Quote</description></item></channel></rss>
