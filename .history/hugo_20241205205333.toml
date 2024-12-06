@@ -1,4 +1,4 @@
 baseURL = "https://PranavGopalak.github.io/DataWebsiteProject-Hugo/"
 languageCode = "en-us"
 title = "Data Website Project - Hugo"
-theme = "ananke"
+theme = "your-theme-name"  # Replace with your actual theme name, e.g., "ananke"
