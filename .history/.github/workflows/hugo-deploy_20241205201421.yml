@@ -1,0 +1,28 @@
+name: Hugo Deploy
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'  # Specify a version if needed
+
+      - name: Build Hugo Site
+        run: hugo --config hugo.toml --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_PAT }}  # Use 'personal_token' instead of 'access_token'
+          publish_dir: ./public  # Ensure this matches your Hugo build directory
