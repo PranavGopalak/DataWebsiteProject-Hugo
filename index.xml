@@ -4,5 +4,12 @@
 &lt;!-- raw HTML omitted -->
 &lt;!-- raw HTML omitted --></description></item><item><title>Random Quote</title><link>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/quote/</link><pubDate>Sun, 01 Dec 2024 12:00:00 +0000</pubDate><guid>https://PranavGopalak.github.io/DataWebsiteProject-Hugo/quote/</guid><description>&lt;h2 id="motivational-quote">Motivational Quote&lt;/h2>
 &lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted --></description></item></channel></rss>
+&lt;p>function generateQuote() {
+const randomIndex = Math.floor(Math.random() * quotes.length);
+const quote = quotes[randomIndex];
+document.getElementById(&amp;lsquo;quote&amp;rsquo;).innerText = &lt;code>&amp;quot;${quote.text}&amp;quot;&lt;/code>;
+document.getElementById(&amp;lsquo;author&amp;rsquo;).innerText = &lt;code>— ${quote.author}&lt;/code>;
+}&lt;/p>
+&lt;p>// Generate a quote when the page loads
+window.onload = generateQuote;
+&lt;!-- raw HTML omitted -->&lt;/p></description></item></channel></rss>
