@@ -1,5 +1,6 @@
 ---
 title: "Random Quote"
+draft: false
 ---
 
 # Motivational Quote
@@ -15,7 +16,6 @@ title: "Random Quote"
     { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
     { text: "Life is 10% what happens to us and 90% how we react to it.", author: "Charles R. Swindoll" },
     { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
-    // Add more quotes as needed
   ];
 
   function generateQuote() {
@@ -25,6 +25,5 @@ title: "Random Quote"
     document.getElementById('author').innerText = `— ${quote.author}`;
   }
 
-  // Generate a quote when the page loads
   window.onload = generateQuote;
 </script>

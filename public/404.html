@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>404 Page not found</title>
-<link rel="stylesheet" href="/DataWebsiteProject-Hugo/css/style.css">
+<link rel="stylesheet" href="/DataWebsiteProject-Hugo/css/custom.css">
 
 
   </head>
   <body>
     
-    <nav>
-      <div class="container">
-        <h1>My Website</h1>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/calculator/">Calculator</a></li>
-          <li><a href="/quote/">Random Quote</a></li>
-        </ul>
+    <nav class="container-navbar">
+    <div class="container">
+      <div class="navbar-title">
+        <strong>My Website</strong>
       </div>
-    </nav>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="/DataWebsiteProject-Hugo/home/">Home</a></li>
+        <li><a href="/DataWebsiteProject-Hugo/calculator/">Calculator</a></li>
+        <li><a href="/DataWebsiteProject-Hugo/quote/">Random Quote</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+</nav>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navbarLinks = document.getElementById('navbar-links');
+
+  hamburger.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+  });
+</script>
+
 
     
     <div class="hero">
-      <h1 id="greeting"></h1>
+      <h1 id="greeting">Good Evening!</h1>
     </div>
 
     
@@ -46,19 +64,19 @@
 
     
     <script>
-      const now = new Date();
-      const hours = now.getHours();
-      let greeting;
+      document.addEventListener('DOMContentLoaded', () => {
+        const now = new Date();
+        const hours = now.getHours();
+        let greeting = "Good Evening!";
 
-      if (hours < 12) {
+        if (hours < 12) {
           greeting = "Good Morning!";
-      } else if (hours < 18) {
+        } else if (hours < 18) {
           greeting = "Good Afternoon!";
-      } else {
-          greeting = "Good Evening!";
-      }
+        }
 
-      document.getElementById('greeting').textContent = greeting;
+        document.getElementById('greeting').textContent = greeting;
+      });
     </script>
   </body>
 </html>

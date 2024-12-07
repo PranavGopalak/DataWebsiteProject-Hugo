@@ -1,5 +1,8 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ .Title }}</title>
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
-<!-- Add any additional head elements here, such as favicon or external fonts -->
+---
+title: "Home"
+draft: false
+---
+
+# Welcome!
+
+Experience a beautifully designed website with interactive features.
