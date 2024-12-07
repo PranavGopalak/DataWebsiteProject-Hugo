@@ -90,3 +90,9 @@ nav .container {
     font-size: 3em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
