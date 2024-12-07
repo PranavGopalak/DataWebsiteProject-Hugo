@@ -1,8 +1,0 @@
-baseURL = "https://PranavGopalak.github.io/DataWebsiteProject-Hugo/"
-languageCode = "en-us"
-title = "Data Website Project - Hugo"
-theme = "ananke"  # Replace with your actual theme name if different
-
-# Optional: Additional configurations
-enableRobotsTXT = true
-paginate = 10

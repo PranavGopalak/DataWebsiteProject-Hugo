@@ -1,6 +1,0 @@
-baseURL = "https://PranavGopalak.github.io/DataWebsiteProject-Hugo/"
-languageCode = "en-us"
-title = "Pranav's Data Website Project"
-theme = "ananke"
-paginate = 10
-
