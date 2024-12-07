@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "particles/head.html" . }}
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <h1>My Website</h1>
+        <ul>
+          <li><a href="{{ "/" | relURL }}">Home</a></li>
+          <li><a href="{{ "/calculator/" | relURL }}">Calculator</a></li>
+          <li><a href="{{ "/quote/" | relURL }}">Random Quote</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Dynamic Greeting -->
+    <div class="hero">
+      <h1 id="greeting"></h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+
+    <!-- Footer (Optional) -->
+    <footer>
+      <div class="container">
+        <p>&copy; {{ now.Format "2006" }} Pranav Gopalak. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Dynamic Greeting -->
+    <script>
+      const now = new Date();
+      const hours = now.getHours();
+      let greeting;
+
+      if (hours < 12) {
+          greeting = "Good Morning!";
+      } else if (hours < 18) {
+          greeting = "Good Afternoon!";
+      } else {
+          greeting = "Good Evening!";
+      }
+
+      document.getElementById('greeting').textContent = greeting;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }}</title>
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+<!-- Add any additional head elements here, such as favicon or external fonts -->
+
+<!-- Dynamic Greeting Script -->
+<script>
+  function setGreeting() {
+    const greetingElement = document.getElementById('greeting');
+    if (!greetingElement) return;
+
+    const now = new Date();
+    const hour = now.getHours();
+    let greetingText = 'Good Evening!';
+
+    if (hour >= 5 && hour < 12) {
+      greetingText = 'Good Morning!';
+    } else if (hour >= 12 && hour < 17) {
+      greetingText = 'Good Afternoon!';
+    }
+
+    greetingElement.innerText = greetingText;
+  }
+
+  window.onload = setGreeting;
+</script>
